@@ -1,0 +1,472 @@
+/* ---------------------- Section top-inner ---------------------- */
+section.top-inner {
+	width: 100%;
+	max-width: 100%;
+	height: 300px;
+	background: url("../images/inner/top-bg.png") no-repeat;
+	background-position: top center;
+	background-size: auto 100% ;
+
+	@media only screen and (max-width : 600px) {
+		height: 150px;
+	}
+}
+/* --------------------- /Section top-inner ---------------------- */
+
+/* ---------------------- Section bottom ---------------------- */
+section.bottom {
+
+	.shape {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	padding: 70px 0;
+
+	.title {
+		@include os-b;
+		font-size: 30px;
+		color: #245470;
+	}
+
+	.boxes {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		margin-top: 0;
+		.box {
+			width: 30%;
+			margin-top: 75px;
+			.inner {
+				max-width: 365px;
+			}
+
+			.title {
+				@include os-b;
+				font-size: 18px;
+				color: #333;
+				text-align: right;
+
+			}
+			.text {
+				@include os-r;
+				font-size: 18px;
+				color: #333;;
+				text-align: right;
+			}
+		}
+	}
+
+	@media only screen and (max-width : 800px) {
+		.boxes {
+			.box {
+				width: 100%;
+				margin: auto;
+				margin-top: 75px;
+				.inner {
+					width: 100%;
+					margin: auto;
+				}
+			}
+		}
+	}
+}
+/* --------------------- /Section bottom ---------------------- */
+
+/* ---------------------- Section content ---------------------- */
+section.content {
+	@include os-r;
+	font-size: 18px;
+	color: #333;
+	text-align: right;
+	padding: 70px 0;
+	p {
+		margin: 15px 0;
+	}
+	.title, h1,h2,h3,h4 {
+		@include os-b;
+		font-size: 30px;
+		color: #245470;
+		margin-bottom: 35px;
+		margin-top: 25px;
+	}
+
+	@media only screen and (max-width : 800px) {
+		padding: 30px 0;
+	}
+}
+/* --------------------- /Section content ---------------------- */
+
+/* ---------------------- Section services ---------------------- */
+section.services {
+
+	padding-bottom: 70px;
+	padding-top: 70px;
+	.section-inner {
+		padding: 0;
+	}
+	.shape {
+		position: absolute;
+		left: 0;
+		bottom: -5px;
+	}
+
+	.title-inner {
+		@include os-b;
+		font-size: 30px;
+		color: #245470;
+		text-align: center;
+	}
+
+	.boxes {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		margin-top: 25px;
+		.box {
+			width: 30%;
+			margin: 1%;
+
+			.inner {
+				text-align: center;
+				width: 100%;
+				//max-width: 393px;
+				border: 1px solid #797a7d;
+				padding-top: 25px;
+				.part-top {
+					background: #f4eade;
+					padding: 25px;
+				}
+
+				.part-bottom {
+					background: #fff;
+					padding: 25px;
+				}
+				.title {
+					@include os-b;
+					font-size: 30px;
+					color: #797a7d;
+				}
+
+				.text {
+					@include os-r;
+					font-size: 18px;
+					color: #333;
+				}
+
+				.details {
+					@include os-b;
+					display: block;
+					font-size: 22px;
+					color: #fff;
+					background-color: #797a7d;
+					width: 100%;
+					max-width: 340px;
+					margin: auto;
+					padding: 15px;
+					transition: 0.5s;
+					margin-top: 15px;
+					&:hover {
+						background-color: #F79318;
+					}
+				}
+			}
+
+
+		}
+	}
+	@media only screen and (max-width : 900px) {
+		.boxes {
+			.box {
+				width: 48%;
+
+			}
+		}
+	}
+	@media only screen and (max-width : 800px) {
+		padding: 30px 0;
+	}
+
+	@media only screen and (max-width : 600px) {
+		.boxes {
+			.box {
+				width: 100%;
+				margin: 2%;
+			}
+		}
+	}
+}
+/* --------------------- /Section services ---------------------- */
+
+/* ---------------------- Section contact-inner ---------------------- */
+section.contact-inner {
+	padding: 70px 0;
+	.cont-flex {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.part-content {
+		padding-left: 70px;
+		width: 50%;
+		
+	 	.title {
+	 		@include os-b;
+			font-size: 30px;
+			color: #245470;
+			text-align: right;
+	 	}
+
+	 	.content {
+	 		@include os-r;
+			font-size: 18px;
+			color: #333;
+			text-align: right;
+			p {
+				margin: 15px 0;
+			}
+	 	}
+
+	 	.contacts {
+	 		@include os-b;
+			font-size: 18px;
+			color: #f7921e;
+			text-align: right;
+			&:before {
+				display: block;
+				content: "";
+				width: 78px;
+				height: 4px;
+				background: #f7921e;
+				
+				margin-top: 25px;
+				margin-bottom: 25px;
+				transition: 0.5s;
+			}
+			a,p {
+				color: #f7921e;
+				display: block;
+				margin-top: 15px;
+			}
+	 	}
+	}
+
+	.part-form {
+		width: 50%;
+		.desc {
+			@include os-r;
+			font-size: 22px;
+			color: #333;
+			text-align: right;
+		}
+		.wpcf7-form-control-wrap {
+
+
+		}
+
+		text-align: left;
+
+		.ajax-loader {
+			display: block;
+		}
+
+		span[role="alert"], .wpcf7-response-output {
+			@include os-r;
+			border: none;
+		}
+		input {
+			width: 100%;
+			@include os-r;
+			font-size: 18px;
+			color: #797a7d;
+			background-color: #e5e4e0;
+			border: none;
+			outline: none;
+			padding: 20px;
+			margin-top: 25px;
+			&::placeholder {
+			  color: #797a7d;
+			}
+
+			&.invalid {
+				border: 1px solid red;
+			}
+		}
+		
+		input[type="submit"] {
+			-webkit-appearance: none;
+			
+			width: 100%;
+			max-width: 260px;
+			margin-right: auto;
+			@include os-b;
+			font-size: 18px;
+			color: #fff;
+			padding: 15px;
+			background-color: #245470;
+		
+			border: none;
+			cursor: pointer;
+			position: relative;
+			
+			transition: 0.5s;
+			opacity: 1;
+			&:hover {
+				background-color: #f7921e;
+			}
+		}
+	}
+	@media only screen and (max-width : 700px) {
+		.part-content {
+			width: 100%;
+			padding-left: 0;
+		}
+
+		.part-form {
+			width: 100%;
+			margin-top: 25px;
+		}
+	}
+	@media only screen and (max-width : 800px) {
+		padding: 30px 0;
+	}
+}
+/* --------------------- /Section contact-inner ---------------------- */
+
+/* ---------------------- Section sub-category ---------------------- */
+section.sub-category {
+	padding: 70px 0;
+
+	.section-inner {
+		display: flex;
+		flex-wrap: wrap;
+	}	
+
+	.sidebar {
+		width: 30%;
+		padding-left: 45px;
+		.title {
+			@include os-b;
+			font-size: 22px;
+			color: #f7921e;
+		}
+		.menu {
+			padding: 30px;
+			background-color: #245470;
+			margin-top: 15px;
+			ul {
+				li {
+					padding: 10px 0;
+					border-top: 1px solid #fff;
+					&:first-child {
+						border: none;
+						padding-top: 0;
+					}
+					&:last-child {
+						padding-bottom: 0;
+					}
+					a {
+						@include os-r;
+						font-size: 18px;
+						color: #fff;
+						transition: 0.5s;
+						&.selected, &:hover {
+							color: #f7921e;
+						}
+					}
+				}
+			}
+		}
+
+		.part-form {
+			background-color: #e5e4e0;
+			margin-top: 30px;
+			padding: 30px;
+			form {
+				margin-top: 15px;
+			}
+			input {
+				width: 100%;
+				@include os-r;
+				font-size: 18px;
+				color: #797a7d;
+				background-color: #fff;
+				border: none;
+				outline: none;
+				padding: 20px;
+				margin-top: 20px;
+				&::placeholder {
+				  color: #797a7d;
+				}
+
+				&.invalid {
+					border: 1px solid red;
+				}
+			}
+			text-align: left;
+
+			span[role="alert"], .wpcf7-response-output {
+				@include os-r;
+				border: none;
+			}
+			input[type="submit"] {
+				-webkit-appearance: none;
+				
+				width: 100%;
+				max-width: 260px;
+				margin-right: auto;
+				@include os-b;
+				font-size: 18px;
+				color: #fff;
+				padding: 15px;
+				background-color: #245470;
+			
+				border: none;
+				cursor: pointer;
+				position: relative;
+				
+				transition: 0.5s;
+				opacity: 1;
+				&:hover {
+					background-color: #f7921e;
+				}
+			}
+		}
+	}
+
+	.content {
+		@include os-r;
+		
+		width: 70%;
+		font-size: 18px;
+		color: #333;
+
+		h1,h2,h3 {
+			@include os-b;
+			font-size: 30px;
+			color: #245470;
+		}
+	}
+	@media only screen and (max-width : 900px) {
+
+		.section-inner {
+			flex-direction: column-reverse;
+		}	
+		.sidebar {
+			width: 100%;
+			padding-left: 0;
+			margin-top: 25px;
+			li {
+				text-align: center;
+			}
+		}
+
+		.content {
+			width: 100%;
+		}
+	}
+	@media only screen and (max-width : 800px) {
+		padding: 30px 0;
+	}
+}
+/* --------------------- /Section sub-category ---------------------- */
