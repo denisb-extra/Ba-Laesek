@@ -22,11 +22,13 @@ section.bottom {
 		top: 0;
 	}
 	padding: 70px 0;
-
+	@media only screen and (max-width : 800px) {
+		padding: 30px 0;
+	}
 	.title {
 		@include os-b;
 		font-size: 30px;
-		color: #245470;
+		color: #ed037e;
 	}
 
 	.boxes {
@@ -37,6 +39,9 @@ section.bottom {
 		.box {
 			width: 30%;
 			margin-top: 75px;
+			@media only screen and (max-width : 800px) {
+				margin-top: 35px!important;
+			}
 			.inner {
 				max-width: 365px;
 			}
@@ -86,13 +91,21 @@ section.content {
 	.title, h1,h2,h3,h4 {
 		@include os-b;
 		font-size: 30px;
-		color: #245470;
-		margin-bottom: 35px;
+		color: #ed037e;
+		margin-bottom: 25px;
 		margin-top: 25px;
 	}
 
 	@media only screen and (max-width : 800px) {
 		padding: 30px 0;
+		font-size: 16px;
+		.title, h1,h2,h3,h4 {
+			font-size: 22px;
+			margin-bottom: 15px;
+			margin-top: 0px;
+		}
+	
+	
 	}
 }
 /* --------------------- /Section content ---------------------- */
@@ -114,7 +127,7 @@ section.services {
 	.title-inner {
 		@include os-b;
 		font-size: 30px;
-		color: #245470;
+		color: #ed037e;
 		text-align: center;
 	}
 
@@ -134,12 +147,12 @@ section.services {
 				border: 1px solid #797a7d;
 				padding-top: 25px;
 				.part-top {
-					background: #f4eade;
+					/*background: #f4eade;*/
 					padding: 25px;
 				}
 
 				.part-bottom {
-					background: #fff;
+					/*background: #fff;*/
 					padding: 25px;
 				}
 				.title {
@@ -159,15 +172,16 @@ section.services {
 					display: block;
 					font-size: 22px;
 					color: #fff;
-					background-color: #797a7d;
+					background-color: #ed037e;
 					width: 100%;
 					max-width: 340px;
 					margin: auto;
 					padding: 15px;
 					transition: 0.5s;
 					margin-top: 15px;
+					opacity: 1;
 					&:hover {
-						background-color: #F79318;
+						opacity: 0.7;
 					}
 				}
 			}
@@ -213,7 +227,7 @@ section.contact-inner {
 	 	.title {
 	 		@include os-b;
 			font-size: 30px;
-			color: #245470;
+			color: #ed037e;
 			text-align: right;
 	 	}
 
@@ -230,21 +244,21 @@ section.contact-inner {
 	 	.contacts {
 	 		@include os-b;
 			font-size: 18px;
-			color: #f7921e;
+			color: #ed037e;
 			text-align: right;
 			&:before {
 				display: block;
 				content: "";
 				width: 78px;
 				height: 4px;
-				background: #f7921e;
+				background: #ed037e;
 				
 				margin-top: 25px;
 				margin-bottom: 25px;
 				transition: 0.5s;
 			}
 			a,p {
-				color: #f7921e;
+				color: #66c6ef;
 				display: block;
 				margin-top: 15px;
 			}
@@ -303,7 +317,7 @@ section.contact-inner {
 			font-size: 18px;
 			color: #fff;
 			padding: 15px;
-			background-color: #245470;
+			background-color: #ed037e;
 		
 			border: none;
 			cursor: pointer;
@@ -312,7 +326,7 @@ section.contact-inner {
 			transition: 0.5s;
 			opacity: 1;
 			&:hover {
-				background-color: #f7921e;
+				opacity: 0.7;
 			}
 		}
 	}
@@ -329,6 +343,16 @@ section.contact-inner {
 	}
 	@media only screen and (max-width : 800px) {
 		padding: 30px 0;
+
+		.part-form {
+			input[type="submit"] {
+			
+				
+				width: 100%;
+				max-width: inherit;
+			}
+		}
+			
 	}
 }
 /* --------------------- /Section contact-inner ---------------------- */
@@ -340,7 +364,11 @@ section.sub-category {
 	.section-inner {
 		display: flex;
 		flex-wrap: wrap;
-	}	
+	}
+
+	.main-title {
+		color: #333;
+	}
 
 	.sidebar {
 		width: 30%;
@@ -348,11 +376,11 @@ section.sub-category {
 		.title {
 			@include os-b;
 			font-size: 22px;
-			color: #f7921e;
+			color: #ed037e;
 		}
 		.menu {
 			padding: 30px;
-			background-color: #245470;
+			background-color: #66c6ef;
 			margin-top: 15px;
 			ul {
 				li {
@@ -371,7 +399,7 @@ section.sub-category {
 						color: #fff;
 						transition: 0.5s;
 						&.selected, &:hover {
-							color: #f7921e;
+							color: #ed037e;
 						}
 					}
 				}
@@ -419,7 +447,7 @@ section.sub-category {
 				font-size: 18px;
 				color: #fff;
 				padding: 15px;
-				background-color: #245470;
+				background-color: #ed037e;
 			
 				border: none;
 				cursor: pointer;
@@ -428,7 +456,7 @@ section.sub-category {
 				transition: 0.5s;
 				opacity: 1;
 				&:hover {
-					background-color: #f7921e;
+					opacity: 0.7;
 				}
 			}
 		}
@@ -444,7 +472,7 @@ section.sub-category {
 		h1,h2,h3 {
 			@include os-b;
 			font-size: 30px;
-			color: #245470;
+			color: #ed037e;
 		}
 	}
 	@media only screen and (max-width : 900px) {
@@ -466,7 +494,67 @@ section.sub-category {
 		}
 	}
 	@media only screen and (max-width : 800px) {
-		padding: 30px 0;
+		padding: 0px 0;
 	}
 }
 /* --------------------- /Section sub-category ---------------------- */
+
+
+/* ---------------------- Section advantages ---------------------- */
+section.advantages.about-page {
+	height: inherit;
+	padding: 70px 0px;
+	
+	.boxes {
+		
+		.box {
+	
+			.title {
+				
+				font-size: 17px;
+			}
+		}
+	}
+
+	@media only screen and (max-width : 800px) {
+		height: inherit;	
+		padding: 30px 0px;
+		.main-title {
+			margin-bottom: 30px;
+		}
+		.boxes {
+		
+			.box {
+				margin-top: 25px;
+				margin-bottom: 25px;
+				.title {
+					 margin-top: 15px;
+					font-size: 16px;
+				}
+			}
+		}
+	}
+}
+/* --------------------- /Section advantages ---------------------- */
+
+/* ---------------------- Section about ---------------------- */
+section.about.about-page {
+	padding: 70px 0 70px 0;
+
+	@media only screen and (max-width : 800px) {
+		padding: 30px 0 30px 0;
+
+		.content {
+		
+			p {
+				margin: 15px 0;
+			}
+			.title, h1,h2,h3,h4 {
+			
+				margin-bottom: 15px;
+				margin-top: 15px;
+			}
+		}
+	}
+}
+/* ---------------------- / Section about ---------------------- */

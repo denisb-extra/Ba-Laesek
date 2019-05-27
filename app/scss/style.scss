@@ -207,7 +207,7 @@ header {
 				display: inline;
 				@include os-b;
 				font-size: 22px;
-				color: #245470;
+				color: #66c6ef;
 				direction: ltr;
 				white-space: nowrap;
 				line-height: 50px;
@@ -219,8 +219,16 @@ header {
 				
 			}
 
-			@media only screen and (max-width : 1340px) {
-				
+			@media only screen and (max-width : 800px) {
+					.tel {
+					
+						font-size: 16px;
+						line-height: 0px;
+
+						img {
+						display: none;
+						}
+				}
 			}
 		}
 
@@ -241,7 +249,7 @@ header {
 							opacity: 1;
 						}
 						>a {
-							color: #f7921e !important;
+							color: #ed037e !important;
 						}
 					}
 					a {
@@ -256,12 +264,12 @@ header {
 							font-size: 16px;
 						}
 						&:hover {
-							color: #f7921e !important;
+							color: #ed037e !important;
 						}
 					}
 					&.current_page_item {
 						a {
-							color: #f7921e;
+							color: #ed037e;
 						}
 					}
 					.sub-menu {
@@ -327,7 +335,7 @@ header {
 	div {
 		width:22px;
 		height: 3px;
-		background-color: #f7921e;
+		background-color: #ed047e;
 		position: absolute;
 		border-radius: 2px;
 		transition: top 0.5s, transform 1s, opacity 0.5s, width 0.5s;
@@ -393,7 +401,7 @@ header {
 				color: #fff;	
 				transition: 0.5s;
 				&:hover {
-					color: #f7921e;
+					color: #ed037e;
 				}
 			}
 			
@@ -413,7 +421,7 @@ header {
 		} 
 		li.current-menu-item, li.current_page_item {
 			a {
-				color: #f7921e;
+				color: #ed037e;
 			}
 		} 
 		.open-arrow {
